@@ -12,7 +12,7 @@ dept_id INTEGER,
 name VARCHAR(50),
 building_name VARCHAR(70)
 );
-
+----------------------------------------------------------------------------
 CREATE TABLE department (
 	dept_id INTEGER PRIMARY KEY,
 	name VARCHAR(50),
@@ -65,7 +65,7 @@ SELECT DISTINCT(name) FROM department;
 INSERT INTO department(dept_id, name, building_name, location) VALUES
 (1001,'Support 123','Northport','Kalpower');
 
-------------------------------------------------
+----------------------------------------------------------------------------
 CREATE TABLE marks(
 	id INTEGER,
     name VARCHAR(120),
@@ -89,3 +89,26 @@ SELECT * FROM marks ORDER BY marathi DESC LIMIT 3;
 SELECT *, dense_rank() OVER(ORDER BY marathi DESC) FROM marks;
 
 SELECT * FROM marks LIMIT 25 OFFSET 35;
+==============================================================================
+DROP table employee;
+
+CREATE TABLE employee (
+	emp_id INTEGER PRIMARY KEY,
+    name VARCHAR(128),
+    city VARCHAR(56),
+    dept_id INTEGER,
+    FOREIGN KEY(dept_id) REFERENCES department(dept_id)
+);
+
+INSERT INTO employee(emp_id, name, city, dept_id)
+VALUES (1, 'Aman', 'Pune', 1);
+
+INSERT INTO employee(emp_id, name, city, dept_id)
+VALUES (2, 'Deepak', 'Mumbai', 5);
+
+SELECT * FROM Department;
+SELECT * FROM employee;
+
+SELECT e.emp_id,e.name,e.city,d.name as 'dept' FROM department d
+JOIN employee e
+ON d.dept_id = e.dept_id

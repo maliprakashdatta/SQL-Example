@@ -47,6 +47,14 @@ CREATE TABLE `bankmanagementsystem`.`openingbankaccountrc` (
 SELECT * FROM bankmanagementsystem.openingbankaccountrc;
 ----------------------------------------------------------------------
 
+CREATE TABLE `bankmanagementsystem`.`transactionaccount` (
+  `transactio_id` INT NOT NULL,
+  `Account_No` VARCHAR(45) NOT NULL,
+  `Amount` INT NULL,
+  `transaction_date_time` VARCHAR(45) NULL,
+  `TransactionAccountcol` VARCHAR(45) NULL,
+  PRIMARY KEY (`transactio_id`, `Account_No`));
+
 
 
 

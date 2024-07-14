@@ -57,6 +57,11 @@ CREATE TABLE `bankmanagementsystem`.`transactionaccount` (
 
 SELECT * FROM bankmanagementsystem.transactionaccount;
 ------------------------------------------------------------------------
+CREATE TABLE `bankmanagementsystem`.`email` (
+  `to` VARCHAR(200) NULL,
+  `cc` VARCHAR(45) NULL,
+  `subject` VARCHAR(200) NULL,
+  `body` VARCHAR(450) NULL);
 
 
 

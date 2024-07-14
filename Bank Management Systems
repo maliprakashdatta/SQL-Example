@@ -32,6 +32,8 @@ CREATE TABLE `bankmanagementsystem`.`registercustomer` (
   `idcard` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`idRegisterCustomer`, `idcard`));
 
+SELECT * FROM bankmanagementsystem.registercustomer;
+
 
 
 

@@ -30,8 +30,9 @@ CREATE TABLE `bankmanagementsystem`.`registercustomer` (
   `address` VARCHAR(45) NULL,
   `emaild` VARCHAR(45) NULL,
   `idcard` VARCHAR(45) NOT NULL,
-  `` VARCHAR(45) NULL,
   PRIMARY KEY (`idRegisterCustomer`, `idcard`));
+
+
 
 
 

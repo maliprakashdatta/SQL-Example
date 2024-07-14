@@ -7,3 +7,5 @@ CREATE TABLE `bankmanagementsystem`.`enteraccountdetails` (
   `acc_type` VARCHAR(45) NULL,
   `balance` VARCHAR(45) NULL);
 
+SELECT * FROM bankmanagementsystem.enteraccountdetails;
+

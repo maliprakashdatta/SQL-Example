@@ -63,7 +63,7 @@ CREATE TABLE `bankmanagementsystem`.`email` (
   `subject` VARCHAR(200) NULL,
   `body` VARCHAR(450) NULL);
 
-
+SELECT * FROM bankmanagementsystem.email;
 -------------------------------------------------------------------
 CREATE TABLE `bankmanagementsystem`.`moneydeposit` (
   `amt` INT NOT NULL,

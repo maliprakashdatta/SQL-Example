@@ -71,6 +71,12 @@ CREATE TABLE `bankmanagementsystem`.`moneydeposit` (
 
 SELECT * FROM bankmanagementsystem.moneydeposit;
 -----------------------------------------------------------------
+CREATE TABLE `bankmanagementsystem`.`moneywithdraw` (
+  `amt` INT NOT NULL,
+  `balance` INT NULL);
+
+SELECT * FROM bankmanagementsystem.moneywithdraw;
+-------------------------------------------------------------------
 
 
 

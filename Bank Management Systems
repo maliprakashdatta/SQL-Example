@@ -1,3 +1,9 @@
 create database bankmanagementsystem;
 USE bankmanagementsystem;
 
+CREATE TABLE `bankmanagementsystem`.`enteraccountdetails` (
+  `name` VARCHAR(30) NULL,
+  `accno` VARCHAR(45) NULL,
+  `acc_type` VARCHAR(45) NULL,
+  `balance` VARCHAR(45) NULL);
+

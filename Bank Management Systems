@@ -21,3 +21,18 @@ CREATE TABLE `bankmanagementsystem`.`card` (
 SELECT * FROM bankmanagementsystem.card;
 -----------------------------------------------------------------
 
+CREATE TABLE `bankmanagementsystem`.`registercustomer` (
+  `idRegisterCustomer` INT NOT NULL,
+  `firstname` VARCHAR(45) NULL,
+  `lastname` VARCHAR(45) NULL,
+  `gender` VARCHAR(45) NULL,
+  `DOB` DATE NULL,
+  `address` VARCHAR(45) NULL,
+  `emaild` VARCHAR(45) NULL,
+  `idcard` VARCHAR(45) NOT NULL,
+  `` VARCHAR(45) NULL,
+  PRIMARY KEY (`idRegisterCustomer`, `idcard`));
+
+
+
+

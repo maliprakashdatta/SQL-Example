@@ -55,6 +55,9 @@ CREATE TABLE `bankmanagementsystem`.`transactionaccount` (
   `TransactionAccountcol` VARCHAR(45) NULL,
   PRIMARY KEY (`transactio_id`, `Account_No`));
 
+SELECT * FROM bankmanagementsystem.transactionaccount;
+------------------------------------------------------------------------
+
 
 
 

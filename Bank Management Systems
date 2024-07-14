@@ -1,6 +1,6 @@
 create database bankmanagementsystem;
 USE bankmanagementsystem;
-
+------------------------------------------------------------------
 CREATE TABLE `bankmanagementsystem`.`enteraccountdetails` (
   `name` VARCHAR(30) NULL,
   `accno` VARCHAR(45) NULL,
@@ -8,4 +8,16 @@ CREATE TABLE `bankmanagementsystem`.`enteraccountdetails` (
   `balance` VARCHAR(45) NULL);
 
 SELECT * FROM bankmanagementsystem.enteraccountdetails;
+-----------------------------------------------------------------
+CREATE TABLE `bankmanagementsystem`.`card` (
+  `cid` INT NOT NULL,
+  `cardNo` VARCHAR(45) NULL,
+  `AccountNo` VARCHAR(45) NULL,
+  `Customer_Name` VARCHAR(45) NULL,
+  `cvv` INT NOT NULL,
+  `Cardtype` VARCHAR(45) NULL,
+  PRIMARY KEY (`cid`, `cvv`));
+
+SELECT * FROM bankmanagementsystem.card;
+-----------------------------------------------------------------
 

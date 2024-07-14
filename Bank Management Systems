@@ -33,6 +33,20 @@ CREATE TABLE `bankmanagementsystem`.`registercustomer` (
   PRIMARY KEY (`idRegisterCustomer`, `idcard`));
 
 SELECT * FROM bankmanagementsystem.registercustomer;
+------------------------------------------------------------------
+CREATE TABLE `bankmanagementsystem`.`openingbankaccountrc` (
+  `id` INT NOT NULL,
+  `firstname` VARCHAR(45) NULL,
+  `lastname` VARCHAR(45) NULL,
+  `gender` VARCHAR(45) NULL,
+  `DOB` DATE NULL,
+  `address` VARCHAR(45) NULL,
+  `emaild` VARCHAR(45) NULL,
+  `idcard` VARCHAR(45) NOT NULL,
+
+SELECT * FROM bankmanagementsystem.openingbankaccountrc;
+----------------------------------------------------------------------
+
 
 
 

@@ -20,19 +20,19 @@ CREATE TABLE card(
 
 SELECT * FROM card;
 -----------------------------------------------------------------
-
-CREATE TABLE registercustomer (
-  idRegisterCustomer INT NOT NULL,
-  firstname VARCHAR(45) NULL,
-  lastname VARCHAR(45) NULL,
+CREATE TABLE customerregisterform(
+  customer_register_id INT NOT NULL,
+  first_name VARCHAR(45) NULL,
+  last_name VARCHAR(45) NULL,
   gender VARCHAR(45) NULL,
-  DOB DATE NULL,
-  address VARCHAR(45) NULL,
+  DOB LONGBLOB NULL,
+  address VARCHAR(45) NULL);
   emaild VARCHAR(45) NULL,
   idcard VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`idRegisterCustomer`, `idcard`));
+  PRIMARY KEY (idRegisterCustomer, idcard));
 
-SELECT * FROM registercustomer;
+ 
+ELECT * FROM registercustomer;
 ------------------------------------------------------------------
 CREATE TABLE openingbankaccountrc (
   id INT NOT NULL,

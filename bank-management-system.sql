@@ -11,12 +11,12 @@ SELECT * FROM enteraccountdetails;
 -----------------------------------------------------------------
 CREATE TABLE card(
   card_id INT NOT NULL,
-  card_no` INT NOT NULL,
-  `account_no` VARCHAR(45) NULL,
-  `customer_name` VARCHAR(45) NULL,
-  `cvv` VARCHAR(45) NULL,
-  `card_type` VARCHAR(45) NULL,
-  PRIMARY KEY (`card_id`, `card_no`));
+  card_no INT NOT NULL,
+  account_no VARCHAR(45) NULL,
+  customer_name VARCHAR(45) NULL,
+  cvv VARCHAR(45) NULL,
+  card_type VARCHAR(45) NULL,
+  PRIMARY KEY (card_id, card_no));
 
 SELECT * FROM card;
 -----------------------------------------------------------------

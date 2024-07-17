@@ -32,15 +32,15 @@ SELECT * FROM department;
 INSERT INTO department (department_id,  department_name) VALUES ('1', '	Marketing');
 
 
-INSERT INTO department(department_id,  department_name) VALUES ('2', 'Human Resources');
-INSERT INTO department(department_id,  department_name) VALUES ('3', 'Marketing');
-INSERT INTO department(department_id,  department_name) VALUES ('4', 'Business Development');
-INSERT INTO department(department_id,  department_name) VALUES ('5', 'Legal');
-INSERT INTO department(department_id,  department_name) VALUES ('6', 'Accounting');
-INSERT INTO department(department_id,  department_name) VALUES ('7', 'Support');
-INSERT INTO department(department_id,  department_name) VALUES ('8', 'Product Management');
-INSERT INTO department(department_id,  department_name) VALUES ('9', 'Sales');
-INSERT INTO department (department_id`, department_name) VALUES ('10', 'Training');
+INSERT INTO department(department_id,  department_name) VALUES ('2','Human Resources');
+INSERT INTO department(department_id,  department_name) VALUES ('3','Marketing');
+INSERT INTO department(department_id,  department_name) VALUES ('4','Business Development');
+INSERT INTO department(department_id,  department_name) VALUES ('5','Legal');
+INSERT INTO department(department_id,  department_name) VALUES ('6','Accounting');
+INSERT INTO department(department_id,  department_name) VALUES ('7','Support');
+INSERT INTO department(department_id,  department_name) VALUES ('8','Product Management');
+INSERT INTO department(department_id,  department_name) VALUES ('9','Sales');
+INSERT INTO department(department_id,  department_name) VALUES ('10','Training');
 
 ---------------------------------------------------------------------------------------------------
 

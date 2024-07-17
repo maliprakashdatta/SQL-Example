@@ -57,11 +57,13 @@ CREATE TABLE transactionaccount (
 
 SELECT * FROM transactionaccount;
 ------------------------------------------------------------------------
+
 CREATE TABLE email (
-  to VARCHAR(200) NULL,
-  cc VARCHAR(45) NULL,
-  subject VARCHAR(200) NULL,
-  body VARCHAR(450) NULL);
+  email_id INT NOT NULL,
+  email_to VARCHAR(45) NULL,
+  email_subject VARCHAR(45) NULL,
+  email_contents VARCHAR(45) NULL);
+
 
 SELECT * FROM email;
 -------------------------------------------------------------------

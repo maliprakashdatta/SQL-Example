@@ -29,3 +29,9 @@ CREATE TABLE department (
 SELECT * FROM department;
 ---------------------------------------------------------------------------
 
+INSERT INTO department (department_id,  department_name) VALUES ('1', '	Marketing');
+
+
+
+
+

@@ -2,7 +2,7 @@ CREATE TABLE employee
 
 USE empolyee
 
-CREATE TABLE empolyee` (
+CREATE TABLE empolyee(
   empolyee_id INT NOT NULL,
   emp_name VARCHAR(45) NULL,
   emp_address VARCHAR(45) NULL,
@@ -13,10 +13,10 @@ CREATE TABLE empolyee` (
 
 SELECT * FROM empolyee;
 -----------------------------------------------------------------------------
-INSERT INTO empolyee(empolyee_id, emp_name, emp_address, emp_dept_id, emp_manager_id) VALUES ('1', 'Prakash', 'Jath', '1001', '1111');
-INSERT INTO empolyee(empolyee_id, emp_name, emp_address, emp_dept_id, emp_manager_id) VALUES ('2', 'Nirav', 'Pune', '1002', '1112');
-INSERT INTO empolyee(empolyee_id, emp_name, emp_address, emp_dept_id, emp_manager_id) VALUES ('3', 'Purva', 'Mumbai', '1003', '1113');
-INSERT INTO empolyee(empolyee_id, emp_name, emp_address, emp_dept_id, emp_manager_id) VALUES ('4', 'Ujwala', 'Stara', '1004', '1114');
+INSERT INTO empolyee(empolyee_id, emp_name, emp_address, emp_dept_id, emp_manager_id) VALUES ('1','Prakash','Jath','1001','1111');
+INSERT INTO empolyee(empolyee_id, emp_name, emp_address, emp_dept_id, emp_manager_id) VALUES ('2','Nirav','Pune','1002','1112');
+INSERT INTO empolyee(empolyee_id, emp_name, emp_address, emp_dept_id, emp_manager_id) VALUES ('3','Purva','Mumbai','1003','1113');
+INSERT INTO empolyee(empolyee_id, emp_name, emp_address, emp_dept_id, emp_manager_id) VALUES ('4','Ujwala','Stara','1004','1114');
 
 select * from employee;
 ------------------------------------------------------------------------------

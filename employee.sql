@@ -20,7 +20,7 @@ INSERT INTO empolyee(empolyee_id, emp_name, emp_address, emp_dept_id, emp_manage
 
 select * from employee;
 ------------------------------------------------------------------------------
-//new table creation department.
+new table creation department.
 CREATE TABLE department (
   department_id INT NOT NULL,
  department_name VARCHAR(45) NULL,

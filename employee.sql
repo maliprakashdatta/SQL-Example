@@ -32,6 +32,17 @@ SELECT * FROM department;
 INSERT INTO department (department_id,  department_name) VALUES ('1', '	Marketing');
 
 
+INSERT INTO department(`department_id`, ` department_name`) VALUES ('2', 'Human Resources');
+INSERT INTO `employee`.`department` (`department_id`, ` department_name`) VALUES ('3', 'Marketing');
+INSERT INTO `employee`.`department` (`department_id`, ` department_name`) VALUES ('4', 'Business Development');
+INSERT INTO `employee`.`department` (`department_id`, ` department_name`) VALUES ('5', 'Legal');
+INSERT INTO `employee`.`department` (`department_id`, ` department_name`) VALUES ('6', 'Accounting');
+INSERT INTO `employee`.`department` (`department_id`, ` department_name`) VALUES ('7', 'Support');
+INSERT INTO `employee`.`department` (`department_id`, ` department_name`) VALUES ('8', 'Product Management');
+INSERT INTO `employee`.`department` (`department_id`, ` department_name`) VALUES ('9', 'Sales');
+INSERT INTO `employee`.`department` (`department_id`, ` department_name`) VALUES ('10', 'Training');
+
+
 
 
 

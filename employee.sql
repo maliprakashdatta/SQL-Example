@@ -17,3 +17,6 @@ INSERT INTO empolyee(empolyee_id, emp_name, emp_address, emp_dept_id, emp_manage
 INSERT INTO empolyee(empolyee_id, emp_name, emp_address, emp_dept_id, emp_manager_id) VALUES ('2', 'Nirav', 'Pune', '1002', '1112');
 INSERT INTO empolyee(empolyee_id, emp_name, emp_address, emp_dept_id, emp_manager_id) VALUES ('3', 'Purva', 'Mumbai', '1003', '1113');
 INSERT INTO empolyee(empolyee_id, emp_name, emp_address, emp_dept_id, emp_manager_id) VALUES ('4', 'Ujwala', 'Stara', '1004', '1114');
+
+select * from employee;
+------------------------------------------------------------------------------

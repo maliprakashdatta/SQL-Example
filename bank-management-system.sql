@@ -9,6 +9,11 @@ CREATE TABLE enteraccountdetails (
 
 SELECT * FROM enteraccountdetails;
 -----------------------------------------------------------------
+ALTER TABLE card
+CHANGE COLUMN `cardid` `card_id` INT NOT NULL ,
+CHANGE COLUMN `cardNo` `card_no` VARCHAR(45) NULL DEFAULT NULL ,
+CHANGE COLUMN `cardtype` `card_type` VARCHAR(45) NULL DEFAULT NULL ;
+---------------------------------------------------------
 CREATE TABLE card (
   cid INT NOT NULL,
   cardNo VARCHAR(45) NULL,

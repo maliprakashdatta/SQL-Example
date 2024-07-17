@@ -9,19 +9,14 @@ CREATE TABLE enteraccountdetails (
 
 SELECT * FROM enteraccountdetails;
 -----------------------------------------------------------------
-ALTER TABLE card
-CHANGE COLUMN `cardid` `card_id` INT NOT NULL ,
-CHANGE COLUMN `cardNo` `card_no` VARCHAR(45) NULL DEFAULT NULL ,
-CHANGE COLUMN `cardtype` `card_type` VARCHAR(45) NULL DEFAULT NULL ;
----------------------------------------------------------
-CREATE TABLE card (
-  cid INT NOT NULL,
-  cardNo VARCHAR(45) NULL,
-  AccountNo VARCHAR(45) NULL,
-  Customer_Name VARCHAR(45) NULL,
-  cvv INT NOT NULL,
-  Cardtype VARCHAR(45) NULL,
-  PRIMARY KEY (`cid`, `cvv`));
+CREATE TABLE card(
+  card_id INT NOT NULL,
+  card_no` INT NOT NULL,
+  `account_no` VARCHAR(45) NULL,
+  `customer_name` VARCHAR(45) NULL,
+  `cvv` VARCHAR(45) NULL,
+  `card_type` VARCHAR(45) NULL,
+  PRIMARY KEY (`card_id`, `card_no`));
 
 SELECT * FROM card;
 -----------------------------------------------------------------

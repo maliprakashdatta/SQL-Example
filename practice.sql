@@ -139,5 +139,11 @@ INSERT INTO `employee`.`officers` (`officer_id`, `officer_name`, `address`) VALU
 INSERT INTO `employee`.`officers` (`officer_id`, `officer_name`, `address`) VALUES ('3', 'Siddharth', 'Mumbai');
 INSERT INTO `employee`.`officers` (`officer_id`, `officer_name`, `address`) VALUES ('4', 'Shivanand', 'Pune');
 INSERT INTO `employee`.`officers` (`officer_id`, `officer_name`, `address`) VALUES ('5', 'Rajendra', 'Hydarbad');
+---------------------------------------------
+
+SELECT officers.officer_name, officers.address, students.course_name  
+FROM officers   
+INNER JOIN students  
+ON officers.officer_id = students.student_id;
 
 

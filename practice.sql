@@ -116,29 +116,29 @@ ON d.dept_id = e.dept_id
 
 officer_id
 
-CREATE TABLE `employee`.`officers` (
-  `officer_id` INT NOT NULL,
-  `officer_name` VARCHAR(45) NULL,
-  `address` VARCHAR(45) NULL,
-  PRIMARY KEY (`officer_id`));
+CREATE TABLE officers (
+  officer_id INT NOT NULL,
+  officer_name VARCHAR(45) NULL,
+  address VARCHAR(45) NULL,
+  PRIMARY KEY (officer_id));
 ------------------------------------
-INSERT INTO `employee`.`students` (`student_id`, `student_name`, `course_name`) VALUES ('1', 'Prakash', 'MCA');
-INSERT INTO `employee`.`students` (`student_id`, `student_name`, `course_name`) VALUES ('2', 'Nirav', 'MBBS');
-INSERT INTO `employee`.`students` (`student_id`, `student_name`, `course_name`) VALUES ('3', 'Purva', 'MBA');
-INSERT INTO `employee`.`students` (`student_id`, `student_name`, `course_name`) VALUES ('4', 'Ujwala', 'MA');
+INSERT INTO students(student_id, student_name, course_name) VALUES ('1', 'Prakash', 'MCA');
+INSERT INTO students(student_id, student_name,course_name) VALUES ('2', 'Nirav', 'MBBS');
+INSERT INTO students(student_id, student_name, course_name) VALUES ('3', 'Purva', 'MBA');
+INSERT INTO students(student_id, student_name, course_name) VALUES ('4', 'Ujwala', 'MA');
 
 ------------------------------------
-CREATE TABLE `employee`.`students` (
-  `student_id` INT NOT NULL,
-  `student_name` VARCHAR(45) NULL,
-  `course_name` VARCHAR(45) NULL,
-  PRIMARY KEY (`student_id`));
+CREATE TABLE students(
+  student_id INT NOT NULL,
+  student_name VARCHAR(45) NULL,
+  course_name VARCHAR(45) NULL,
+  PRIMARY KEY (student_id));
 ---------------------------------------------------------------------------------------------
-INSERT INTO `employee`.`officers` (`officer_id`, `officer_name`, `address`) VALUES ('1', 'Umesh', 'Pune');
-INSERT INTO `employee`.`officers` (`officer_id`, `officer_name`, `address`) VALUES ('2', 'Ramesh', 'sangli');
-INSERT INTO `employee`.`officers` (`officer_id`, `officer_name`, `address`) VALUES ('3', 'Siddharth', 'Mumbai');
-INSERT INTO `employee`.`officers` (`officer_id`, `officer_name`, `address`) VALUES ('4', 'Shivanand', 'Pune');
-INSERT INTO `employee`.`officers` (`officer_id`, `officer_name`, `address`) VALUES ('5', 'Rajendra', 'Hydarbad');
+INSERT INTO officers(officer_id, officer_name, address) VALUES ('1', 'Umesh', 'Pune');
+INSERT INTO officers(officer_id, officer_name, address) VALUES ('2', 'Ramesh', 'sangli');
+INSERT INTO officers(officer_id, officer_name, address) VALUES ('3', 'Siddharth', 'Mumbai');
+INSERT INTO officers(officer_id, officer_name, address) VALUES ('4', 'Shivanand', 'Pune');
+INSERT INTO officers(officer_id, officer_name, address) VALUES ('5', 'Rajendra', 'Hydarbad');
 -------------------------------------------------------------------------------------------------
 
 ---->Inner Join---------------

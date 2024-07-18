@@ -44,7 +44,13 @@ INSERT INTO department(department_id,  department_name) VALUES ('10','Training')
 
 ALTER TABLE employees 
 RENAME TO  employee.emp ;
------------------------------------------------------------
+--------------------------------------------------------------------------------------
+-------Image representation:-----------------------
+SELECT *  
+FROM department   
+INNER JOIN emp  
+ON department.department_id = emp.emp_name;
+---------------------------------
 
 
 

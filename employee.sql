@@ -42,6 +42,11 @@ INSERT INTO department(department_id,  department_name) VALUES ('10','Training')
 
 ---------------------------------------------------------------------------------------------------
 
+ALTER TABLE employees 
+RENAME TO  employee.emp ;
+-----------------------------------------------------------
+
+
 
 
 

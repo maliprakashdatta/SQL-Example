@@ -133,17 +133,27 @@ CREATE TABLE `employee`.`students` (
   `student_name` VARCHAR(45) NULL,
   `course_name` VARCHAR(45) NULL,
   PRIMARY KEY (`student_id`));
-------------------------------------------------------------
+---------------------------------------------------------------------------------------------
 INSERT INTO `employee`.`officers` (`officer_id`, `officer_name`, `address`) VALUES ('1', 'Umesh', 'Pune');
 INSERT INTO `employee`.`officers` (`officer_id`, `officer_name`, `address`) VALUES ('2', 'Ramesh', 'sangli');
 INSERT INTO `employee`.`officers` (`officer_id`, `officer_name`, `address`) VALUES ('3', 'Siddharth', 'Mumbai');
 INSERT INTO `employee`.`officers` (`officer_id`, `officer_name`, `address`) VALUES ('4', 'Shivanand', 'Pune');
 INSERT INTO `employee`.`officers` (`officer_id`, `officer_name`, `address`) VALUES ('5', 'Rajendra', 'Hydarbad');
----------------------------------------------
+-------------------------------------------------------------------------------------------------
 
+---->Inner Join---------------
 SELECT officers.officer_name, officers.address, students.course_name  
 FROM officers   
 INNER JOIN students  
 ON officers.officer_id = students.student_id;
+--------------------------------------------------------
+
+---->Left Join----------------
+SELECT  officers.officer_name, officers.address, students.course_name  
+FROM officers  
+LEFT JOIN students  
+ON officers.officer_id = students.student_id; 
+--------------------------------
+
 
 

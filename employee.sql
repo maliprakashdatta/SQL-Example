@@ -65,7 +65,18 @@ FROM emp
 INNER JOIN dept  
 ON emp.empolyee_id = dept.department_id;
 ------------------------------------------------------
-===>
+===>Left JOIN
+SELECT emp.emp_name, emp.emp_address, dept.department_id  
+FROM emp   
+LEFT JOIN dept  
+ON emp.empolyee_id = dept.department_id;
+------------------------------------------------------
+===>Right Join
+
+SELECT emp.emp_name, emp.emp_address, dept.department_id  
+FROM emp   
+RIGHT JOIN dept  
+ON emp.empolyee_id = dept.department_id;
 --------------------------------------------------------------------------------------
 ==================================
 officer table and students table====>

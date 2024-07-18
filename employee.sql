@@ -40,7 +40,7 @@ INSERT INTO department(department_id,  department_name) VALUES ('8','Product Man
 INSERT INTO department(department_id,  department_name) VALUES ('9','Sales');
 INSERT INTO department(department_id,  department_name) VALUES ('10','Training');
 
----------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
 
 ALTER TABLE employees 
 RENAME TO  employee.emp ;
@@ -50,10 +50,10 @@ RENAME TO  employee.dept;
 --------------------------------------------------------------------------------------
 -------Image representation:-----------------------
 SELECT *  
-FROM department   
+FROM dept   
 INNER JOIN emp  
-ON department.department_id = emp.emp_name;
----------------------------------
+ON dept.department_id = emp.emp_name;
+--------------------------------------------------------------------------------------
 
 
 

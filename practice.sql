@@ -112,3 +112,13 @@ SELECT * FROM employee;
 SELECT e.emp_id,e.name,e.city,d.name as 'dept' FROM department d
 JOIN employee e
 ON d.dept_id = e.dept_id
+===================************************************************==============================
+
+officer_id
+
+CREATE TABLE `employee`.`officers` (
+  `officer_id` INT NOT NULL,
+  `officer_name` VARCHAR(45) NULL,
+  `address` VARCHAR(45) NULL,
+  PRIMARY KEY (`officer_id`));
+

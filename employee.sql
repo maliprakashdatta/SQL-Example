@@ -54,6 +54,56 @@ FROM dept
 INNER JOIN emp  
 ON dept.department_id = emp.emp_name;
 --------------------------------------------------------------------------------------
+==================================
+officer table and students table====>
+==================================
+CREATE TABLE officers (
+  officer_id INT NOT NULL,
+  officer_name VARCHAR(45) NULL,
+  address VARCHAR(45) NULL,
+  PRIMARY KEY (officer_id));
+------------------------------------
+INSERT INTO students(student_id, student_name, course_name) VALUES ('1', 'Prakash', 'MCA');
+INSERT INTO students(student_id, student_name,course_name) VALUES ('2', 'Nirav', 'MBBS');
+INSERT INTO students(student_id, student_name, course_name) VALUES ('3', 'Purva', 'MBA');
+INSERT INTO students(student_id, student_name, course_name) VALUES ('4', 'Ujwala', 'MA');
+
+------------------------------------
+CREATE TABLE students(
+  student_id INT NOT NULL,
+  student_name VARCHAR(45) NULL,
+  course_name VARCHAR(45) NULL,
+  PRIMARY KEY (student_id));
+---------------------------------------------------------------------------------------------
+INSERT INTO officers(officer_id, officer_name, address) VALUES ('1', 'Umesh', 'Pune');
+INSERT INTO officers(officer_id, officer_name, address) VALUES ('2', 'Ramesh', 'sangli');
+INSERT INTO officers(officer_id, officer_name, address) VALUES ('3', 'Siddharth', 'Mumbai');
+INSERT INTO officers(officer_id, officer_name, address) VALUES ('4', 'Shivanand', 'Pune');
+INSERT INTO officers(officer_id, officer_name, address) VALUES ('5', 'Rajendra', 'Hydarbad');
+-------------------------------------------------------------------------------------------------
+
+---->Inner Join---------------
+SELECT officers.officer_name, officers.address, students.course_name  
+FROM officers   
+INNER JOIN students  
+ON officers.officer_id = students.student_id;
+--------------------------------------------------------
+
+---->Left Join----------------
+SELECT  officers.officer_name, officers.address, students.course_name  
+FROM officers  
+LEFT JOIN students  
+ON officers.officer_id = students.student_id; 
+--------------------------------
+---->Right Join----------------
+SELECT officers.officer_name, officers.address, students.course_name, students.student_name  
+FROM officers  
+RIGHT JOIN students  
+ON officers.officer_id = students.student_id;
+
+
+
+
 
 
 

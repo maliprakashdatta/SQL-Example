@@ -154,6 +154,11 @@ FROM officers
 LEFT JOIN students  
 ON officers.officer_id = students.student_id; 
 --------------------------------
+---->Right Join----------------
+SELECT officers.officer_name, officers.address, students.course_name, students.student_name  
+FROM officers  
+RIGHT JOIN students  
+ON officers.officer_id = students.student_id;
 
 
 

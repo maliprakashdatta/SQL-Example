@@ -133,4 +133,11 @@ CREATE TABLE `employee`.`students` (
   `student_name` VARCHAR(45) NULL,
   `course_name` VARCHAR(45) NULL,
   PRIMARY KEY (`student_id`));
+------------------------------------------------------------
+INSERT INTO `employee`.`officers` (`officer_id`, `officer_name`, `address`) VALUES ('1', 'Umesh', 'Pune');
+INSERT INTO `employee`.`officers` (`officer_id`, `officer_name`, `address`) VALUES ('2', 'Ramesh', 'sangli');
+INSERT INTO `employee`.`officers` (`officer_id`, `officer_name`, `address`) VALUES ('3', 'Siddharth', 'Mumbai');
+INSERT INTO `employee`.`officers` (`officer_id`, `officer_name`, `address`) VALUES ('4', 'Shivanand', 'Pune');
+INSERT INTO `employee`.`officers` (`officer_id`, `officer_name`, `address`) VALUES ('5', 'Rajendra', 'Hydarbad');
+
 

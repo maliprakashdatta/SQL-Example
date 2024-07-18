@@ -58,6 +58,14 @@ SELECT *
 FROM dept 
 INNER JOIN emp  
 ON emp.empolyee_id = dept.department_id;
+-----------------------------------------------------
+===>Inner Join
+SELECT emp.emp_name, emp.emp_address, dept.department_id  
+FROM emp   
+INNER JOIN dept  
+ON emp.empolyee_id = dept.department_id;
+------------------------------------------------------
+===>
 --------------------------------------------------------------------------------------
 ==================================
 officer table and students table====>

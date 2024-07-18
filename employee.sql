@@ -100,6 +100,13 @@ SELECT officers.officer_name, officers.address, students.course_name, students.s
 FROM officers  
 RIGHT JOIN students  
 ON officers.officer_id = students.student_id;
+--------------------------------
+---->Full Join----------------
+SELECT officer_id,officer_name,student_id,course_name
+ FROM students
+ FULL JOIN officers
+ ON officer_id=student_id;
+
 
 
 

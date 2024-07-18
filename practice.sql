@@ -121,4 +121,10 @@ CREATE TABLE `employee`.`officers` (
   `officer_name` VARCHAR(45) NULL,
   `address` VARCHAR(45) NULL,
   PRIMARY KEY (`officer_id`));
+------------------------------------
+CREATE TABLE `employee`.`students` (
+  `student_id` INT NOT NULL,
+  `student_name` VARCHAR(45) NULL,
+  `course_name` VARCHAR(45) NULL,
+  PRIMARY KEY (`student_id`));
 

@@ -77,6 +77,13 @@ SELECT emp.emp_name, emp.emp_address, dept.department_id
 FROM emp   
 RIGHT JOIN dept  
 ON emp.empolyee_id = dept.department_id;
+-----------------------------------------------------------
+====>FULL JOIN
+SELECT empolyee_id, emp_name, department_id
+ FROM dept
+ FULL JOIN emp
+ ON empolyee_id=department_id;
+
 --------------------------------------------------------------------------------------
 ==================================
 officer table and students table====>

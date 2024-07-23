@@ -164,7 +164,7 @@ ON officers.officer_id = students.student_id;
 =================
 
 CREATE TABLE address (
-  id INT NOT NULL,
+  address_id INT NOT NULL,
   city VARCHAR(45) NULL,
   PRIMARY KEY (`id`));
 --------------------------------------------------

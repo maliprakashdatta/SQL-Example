@@ -1,4 +1,4 @@
-
+ 
 CREATE DATABASE IF NOT EXISTS stepupdb;
 
 USE stepupdb;
